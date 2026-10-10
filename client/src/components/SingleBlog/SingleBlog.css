@@ -1,0 +1,244 @@
+.blogWrapper {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.blogStamps {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogStampBx {
+    display: flex;
+    gap: .75em;
+    align-items: center;
+}
+
+.blogStamps h3 {
+    font-size: 5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Viga";
+}
+
+.blogStamps h5 {
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+
+.blogImage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.blogImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.blogButtons {
+    position: absolute;
+    padding: 2em;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    gap: 1em;
+}
+
+.blogButtons button {
+    background: #fff;
+    border: none;
+    padding: .75em 1.5em;
+    font-size: 1.25em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.blogSDesc {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em 0em 2em 0em;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.blogSDesc h4 {
+    font-size: 2.5em;
+    width: 500px;
+    text-align: center;
+}
+
+.blogSDesc h6 {
+    font-size: 1em;
+    font-family: "Lobster Two";
+}
+
+.blogSUser {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.userCard {
+    width: 850px;
+    border: 3px solid rgba(0,0,0,0.25);
+    padding: 2em;
+    height: 500px;
+    border-radius: 4em;
+    display: flex;
+}
+
+.userCardTxt {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.userCardImg {
+    flex: 4;
+    width: 100%;
+    height: 100%;
+}
+
+.userCardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3em;
+}
+
+.userAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.userAbout p {
+    font-size: 1.25em;
+    font-weight: 100;
+    width: 400px;
+}
+
+.userSocial {
+    display: flex;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.userSocial a i {
+    font-size: 1.5em;
+}
+
+.userSpan {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.userSpanBx {
+    display: flex;
+    flex-direction: column;
+}
+
+.userSpanBx h5 {
+    font-size: 1.25em;
+}
+
+.userSpan img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.blogSStory {
+    width: 100%;
+    padding: 4em 15em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.blogSStory p {
+    font-size: 1.15em;
+    width: 100%;
+}
+
+.blogBtn {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    font-size: 1.15em;
+}
+
+/* ----------------------------------------------------------------animations----------------------------------------------------- */
+
+.line-wobble {
+    --uib-size: 40px;
+    --uib-speed: 1.55s;
+    --uib-color: black;
+    --uib-line-weight: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--uib-line-weight);
+    width: var(--uib-size);
+    border-radius: calc(var(--uib-line-weight) / 2);
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.line-wobble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--uib-color);
+    opacity: 0.1;
+}
+
+.line-wobble::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: calc(var(--uib-line-weight) / 2);
+    animation: wobble var(--uib-speed) ease-in-out infinite;
+    transform: translateX(-90%);
+    background-color: var(--uib-color);
+}
+
+@keyframes wobble {
+
+    0%,
+    100% {
+        transform: translateX(-90%);
+    }
+
+    50% {
+        transform: translateX(90%);
+    }
+}
+
+.writeInputAltAlt {
+    border-bottom: none;
+    padding-left: 2em;
+}

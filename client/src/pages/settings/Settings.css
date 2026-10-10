@@ -1,0 +1,86 @@
+.settings {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2em 0em;
+}
+
+.settingsWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settingsForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settingsPP {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.profileImageMain {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.uploader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.uploader label {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.uploader label i {
+    color: #fff;
+}
+
+.settingsInput {
+    width: 400px;
+}
+
+.optionsBx {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-top: 2em;
+}
+
+.settingsInput {
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: .5em;
+    font-size: 1.15em;
+    border-radius: 8px;
+}
+
+.optionsBx button {
+    width: fit-content;
+    padding: .75em 1.5em;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.15em;
+    margin-top: .5em;
+    border-radius: 5px;
+}
